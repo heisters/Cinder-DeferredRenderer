@@ -1,0 +1,63 @@
+<cinder>
+  <block
+    name="DeferredRenderer"
+    id="co.heisters.deferred-renderer"
+    author="Ian Heisters"
+    license="BSD 2-Clause"
+    summary="A deferred rendering engine for Cinder that abstracts and extends the DR examples provided in the Cinder codebase. Designed with extensibility and customizability in mind."
+    url="https://github.com/heisters/Cinder-DeferredRenderer"
+    git="git://github.com/heisters/Cinder-DeferredRenderer.git"
+    >
+    <supports os="macosx" />
+    <supports os="msw" />
+
+    <includePath>include/</includePath>
+
+    <header>DeferredRenderer.hpp</header>
+    <header>Light.hpp</header>
+    <header>Material.hpp</header>
+    <header>Model.hpp</header>
+
+    <source>DeferredRenderer.cpp</source>
+    <source>Light.cpp</source>
+    <source>Material.cpp</source>
+    <source>Model.cpp</source>
+
+    <asset>assets/shaders/ao/composite.frag</asset>
+    <asset>assets/shaders/ao/hbao/ao.frag</asset>
+    <asset>assets/shaders/ao/hbao/blur.frag</asset>
+    <asset>assets/shaders/ao/sao/ao.frag</asset>
+    <asset>assets/shaders/ao/sao/blur.frag</asset>
+    <asset>assets/shaders/ao/sao/csz.frag</asset>
+    <asset>assets/shaders/bloom/blur.frag</asset>
+    <asset>assets/shaders/bloom/composite.frag</asset>
+    <asset>assets/shaders/bloom/highpass.frag</asset>
+    <asset>assets/shaders/common/light.glsl</asset>
+    <asset>assets/shaders/common/material.glsl</asset>
+    <asset>assets/shaders/common/offset.glsl</asset>
+    <asset>assets/shaders/common/pass_through.vert</asset>
+    <asset>assets/shaders/common/pi.glsl</asset>
+    <asset>assets/shaders/common/unpack.glsl</asset>
+    <asset>assets/shaders/common/vertex_in.glsl</asset>
+    <asset>assets/shaders/common/vertex_out.glsl</asset>
+    <asset>assets/shaders/deferred/debug.frag</asset>
+    <asset>assets/shaders/deferred/emissive.frag</asset>
+    <asset>assets/shaders/deferred/gbuffer.frag</asset>
+    <asset>assets/shaders/deferred/gbuffer.vert</asset>
+    <asset>assets/shaders/deferred/lbuffer_light.frag</asset>
+    <asset>assets/shaders/deferred/lbuffer_light.vert</asset>
+    <asset>assets/shaders/deferred/lbuffer_shadow.frag</asset>
+    <asset>assets/shaders/deferred/shadow_map.frag</asset>
+    <asset>assets/shaders/post/color.frag</asset>
+    <asset>assets/shaders/post/composite.frag</asset>
+    <asset>assets/shaders/post/dof.frag</asset>
+    <asset>assets/shaders/post/fog.frag</asset>
+    <asset>assets/shaders/post/fxaa.frag</asset>
+    <asset>assets/shaders/ray/composite.frag</asset>
+    <asset>assets/shaders/ray/light.frag</asset>
+    <asset>assets/shaders/ray/light.vert</asset>
+    <asset>assets/shaders/ray/occlude.frag</asset>
+    <asset>assets/shaders/ray/scatter.frag</asset>
+
+  </block>
+</cinder>
